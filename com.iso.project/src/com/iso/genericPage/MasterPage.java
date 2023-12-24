@@ -37,8 +37,10 @@ public class MasterPage {
 		
 		if(prop.getProperty("browser").equalsIgnoreCase("chrome")) 
 		{
-			WebDriverManager.chromedriver().setup();
-			driver=new ChromeDriver();
+			//WebDriverManager.chromedriver().setup();
+			//driver=new ChromeDriver();
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\com.iso.drivers\\chromedriver.exe");
+			driver= new ChromeDriver();
 		}else if(prop.getProperty("browser").equalsIgnoreCase("edge"))
 		{
 			WebDriverManager.edgedriver().setup();

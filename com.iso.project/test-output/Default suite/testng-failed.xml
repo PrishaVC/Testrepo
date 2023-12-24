@@ -6,7 +6,6 @@
       <class name="com.iso.tests.LoginTest">
         <methods>
           <include name="loginTest"/>
-          <include name="closeLoginPage"/>
         </methods>
       </class> <!-- com.iso.tests.LoginTest -->
     </classes>
